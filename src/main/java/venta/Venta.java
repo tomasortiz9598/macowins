@@ -1,14 +1,12 @@
 package venta;
 
-import prenda.Prenda;
-
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class Venta {
   public boolean pagaEnEfectivo;
-  public List<PrendaYCantidad> prendas;
+  public List<Producto> prendas;
   public Date fecha;
   public double coeficienteFijo = 0.5; //Esto estaria bueno meterlo en otro lugar ya que no es dinamico
   public Integer cantidadCuotas = 1;
