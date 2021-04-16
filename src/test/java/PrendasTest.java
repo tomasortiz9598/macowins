@@ -1,32 +1,28 @@
 import org.junit.Assert;
 import org.junit.Test;
-import prenda.Criterio;
-import prenda.CriterioNuevo;
-import prenda.Prenda;
+import prenda.*;
 
-public class PrendasTest{
-
-  private Object CriterioNuevo;
-  private Object Criterioliquidacion;
-  private Object CriterioPromocion;
-  Prenda pantalon = new Prenda(123, (Criterio) CriterioNuevo);
-  Prenda saco = new Prenda(200, (Criterio) Criterioliquidacion);
-  Prenda camisa = new Prenda(100, (Criterio) CriterioPromocion);
+public class PrendasTest extends  MainTest{
 
   //uso assertTrue porque sino me tira un deprecation warning
 
   @Test
+  public void dummy(){
+    Assert.assertTrue(true);
+  }
+
+  @Test
   public void pantalonNuevo(){
-    Assert.assertTrue(123 ==  pantalon.calcularPrecio());
+    Assert.assertTrue(123 ==  this.pantalon.calcularPrecio());
   }
 
   @Test
   public void sacoLiquidacion(){
-    Assert.assertTrue(100 == saco.calcularPrecio());
+    Assert.assertTrue(100 == this.saco.calcularPrecio());
   }
   @Test
   public void camisaPromocion(){
-    Assert.assertTrue(85 == camisa.calcularPrecio());
+    Assert.assertTrue(85 == this.camisa.calcularPrecio());
   }
 
 }

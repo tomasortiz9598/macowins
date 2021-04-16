@@ -15,7 +15,7 @@ public class Venta {
 
   public double valorPrendas(){
     return this.prendas.stream()
-        .map(prenda -> prenda.prenda.calcularPrecio())
+        .map(prenda -> prenda.prenda.calcularPrecio() * prenda.cantidad)
         .collect(Collectors.summingDouble(i -> i));
   }
 
