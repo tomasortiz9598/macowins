@@ -4,7 +4,7 @@ import prenda.Criterio;
 import prenda.CriterioNuevo;
 import prenda.Prenda;
 
-class PrendasTest{
+public class PrendasTest{
 
   private Object CriterioNuevo;
   private Object Criterioliquidacion;

@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-class VentasTest{
+public class VentasTest{
 
   private Object CriterioNuevo;
   private Object Criterioliquidacion;
