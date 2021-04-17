@@ -5,8 +5,11 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Venta {
-  //Aca podria crear un objeto medioDePago que internamente resuelva la logica del recargo.
+  //Aca podria crear una strategy medioDePago que internamente resuelva la logica del recargo.
   //Elegí esta opcion para aportar a la simplicidad del codigo
+  //Tambien podria ser un enum.
+  //Si se agrega mercado pago tengo que agregar otro if y alto quilombo
+  //Tambien podria ser un template method
   public boolean pagaEnEfectivo;
   public List<Producto> prendas;
   public Date fecha;

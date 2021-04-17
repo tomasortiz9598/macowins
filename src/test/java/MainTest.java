@@ -12,6 +12,9 @@ import java.util.List;
 
 public class MainTest {
 
+  //Esto no esta bueno porque pierdo referencia del tipo de prenda y si el usuario quiere saber el tipo puede.
+  // De este modo quien tiene conocimiento sobre el tipo de prenda es unicamente el proggramador
+  //Conviene hacer un enum del tipo de prenda y meterlo adentro de Prenda()
   Prenda pantalon = new Prenda(123,  new CriterioNuevo());
   Prenda saco = new Prenda(200, new CriterioLiquidacion());
   Prenda camisa = new Prenda(100, new CriterioPromocion());
