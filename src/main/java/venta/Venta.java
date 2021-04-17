@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Venta {
+  //Aca podria crear un objeto medioDePago que internamente resuelva la logica del recargo.
+  //Elegí esta opcion para aportar a la simplicidad del codigo
   public boolean pagaEnEfectivo;
   public List<Producto> prendas;
   public Date fecha;
